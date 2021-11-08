@@ -7,6 +7,91 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+header {
+  font-size: 1.25rem;
+  border-bottom: solid 8px hsl(0deg, 0%, 40%);
+  padding: 48px 128px 36px 128px;
+}
+
+main  {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 64px 128px;
+  min-height: 100%;
+}
+
+h1 {
+  padding: 40px 0px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-left: -40px;
+  padding: 16px 40px;
+  width: max-content;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+section {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 8px 24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.intro-chunk {
+  width: 400px;
+  padding: 16px 24px;
+}
+
+.max-width-wrapper {
+  margin: auto;
+  max-width: 590px;
+}
+
+@media (max-width: 810px) {
+  main {
+    padding: 64px 0px;
+  }
+
+  header {
+    padding: 36px 128px 36px 8px;
+  }
+
+  .intro-chunk{
+    padding: 16px;
+  }
+
+  .max-width-wrapper {
+    margin: 0px;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 375px){
+  .intro-chunk p {
+    font-size: 1.5rem;
+  }
+
+  .intro-chunk {
+    padding-right: 64px;
+  }
+
+  h2 {
+    width: fit-content;
+  }
+
+  section, main {
+    margin-right: 0;
+    min-width: 100%;
+  }
+}
